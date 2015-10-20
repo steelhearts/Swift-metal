@@ -15,6 +15,7 @@
 		8964AD111BD6263300E5503B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8964AD0F1BD6263300E5503B /* LaunchScreen.storyboard */; };
 		8964AD1C1BD6263400E5503B /* metalgameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8964AD1B1BD6263400E5503B /* metalgameTests.swift */; };
 		8964AD271BD6263400E5503B /* metalgameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8964AD261BD6263400E5503B /* metalgameUITests.swift */; };
+		8964AD351BD62F7D00E5503B /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8964AD341BD62F7D00E5503B /* MetalKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		8964AD221BD6263400E5503B /* metalgameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = metalgameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8964AD261BD6263400E5503B /* metalgameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metalgameUITests.swift; sourceTree = "<group>"; };
 		8964AD281BD6263400E5503B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8964AD341BD62F7D00E5503B /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8964AD351BD62F7D00E5503B /* MetalKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +102,7 @@
 		8964AD031BD6263300E5503B /* metalgame */ = {
 			isa = PBXGroup;
 			children = (
+				8964AD341BD62F7D00E5503B /* MetalKit.framework */,
 				8964AD041BD6263300E5503B /* AppDelegate.swift */,
 				8964AD061BD6263300E5503B /* GameViewController.swift */,
 				8964AD081BD6263300E5503B /* Shaders.metal */,
@@ -196,6 +200,7 @@
 				TargetAttributes = {
 					8964AD001BD6263300E5503B = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = U4Q367YKC6;
 					};
 					8964AD161BD6263400E5503B = {
 						CreatedOnToolsVersion = 7.1;
@@ -352,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -391,7 +396,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -403,7 +408,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = metalgame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kdm.metalgame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,7 +421,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = metalgame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kdm.metalgame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -490,6 +499,7 @@
 				8964AD2D1BD6263400E5503B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8964AD2E1BD6263400E5503B /* Build configuration list for PBXNativeTarget "metalgameTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +508,7 @@
 				8964AD301BD6263400E5503B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8964AD311BD6263400E5503B /* Build configuration list for PBXNativeTarget "metalgameUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +517,7 @@
 				8964AD331BD6263400E5503B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
